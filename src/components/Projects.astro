@@ -2,6 +2,7 @@
 import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
+import Supabase from "./icons/Supabase.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -16,22 +17,28 @@ const TAGS = {
     class: "bg-[#003159] text-white",
     icon: Tailwind,
   },
+  SUPABASE: {
+    name: "Supabase",
+    class: "bg-[#333333] text-white",
+    icon: Supabase,
+  },
 }
 const PROJECTS = [
   {
-    title: "SVGL - A beautiful library with SVG logos",
+    title: "AI Music Playlist Generator",
     description:
-      "Biblioteca de logos SVG de las marcas más populares. +10k visitas al mes. +2K svgs descargados. Creado desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://svgl.vercel.app/",
-    github: "https://github.com/pheralb/svgl",
-    image: "/projects/svgl.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+      "Generates a playlist based on a prompt, it can be a song name, a genre, music instrument, decade, or mood. Uses AI to analyze the prompt and returns a playlist based on it. Built with Next.js using Typescript, Tailwind CSS, and Supabase.",
+    link: "https://ai-music-playlist-generator-nextjs-supabase.vercel.app/",
+    github: "https://github.com/abudi53/AI-Music-Playlist-Generator",
+    image: "/projects/ai-music-generator.webp",
+    tags: [TAGS.NEXT, TAGS.TAILWIND, TAGS.SUPABASE],
   },
   {
-    title: "AdventJS - Retos de programación con JavaScript y TypeScript",
+    title: "Sensory Canvas AI - Inmersive Art AI Experience",
     description:
-      "Plataforma gratuita con retos de programación. Más de 1 millón de visitas en un mes. +50K retos completados. Creada desde cero con Next.js, React y Tailwind CSS.",
-    link: "https://adventjs.dev",
+      "An AI art experience that generates an art image and sound based on the user's input. Built with Django, Next.js using Typescript and Tailwind CSS.",
+    link: "https://sensory-canvas-ai.vercel.app/",
+    github: "https://github.com/abudi53/Sensory-Canvas-AI",
     image: "/projects/adventjs.webp",
     tags: [TAGS.NEXT, TAGS.TAILWIND],
   },
