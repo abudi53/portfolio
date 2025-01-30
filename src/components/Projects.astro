@@ -3,6 +3,7 @@ import GitHub from "./icons/GitHub.astro"
 import NextJS from "./icons/NextJS.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Supabase from "./icons/Supabase.astro"
+import Django from "./icons/Django.astro"
 import Link from "./icons/Link.astro"
 import LinkButton from "./LinkButton.astro"
 
@@ -22,6 +23,11 @@ const TAGS = {
     class: "bg-[#333333] text-white",
     icon: Supabase,
   },
+  DJANGO: {
+    name: "Django",
+    class: "bg-[#092E20] text-white",
+    icon: Django,
+  },
 }
 const PROJECTS = [
   {
@@ -36,11 +42,11 @@ const PROJECTS = [
   {
     title: "Sensory Canvas AI - Inmersive Art AI Experience",
     description:
-      "An AI art experience that generates an art image and sound based on the user's input. Built with Django, Next.js using Typescript and Tailwind CSS.",
+      "An AI art experience that generates an art image and sound based on the user's input. Built with Django, Next.js using Typescript and Tailwind CSS. Deployed the front on Vercel and back on AWS EC2 using nginx.",
     link: "https://sensory-canvas-ai.vercel.app/",
     github: "https://github.com/abudi53/Sensory-Canvas-AI",
     image: "/projects/sensorycanvas.webp",
-    tags: [TAGS.NEXT, TAGS.TAILWIND],
+    tags: [TAGS.DJANGO, TAGS.NEXT, TAGS.TAILWIND],
   },
 ]
 ---
